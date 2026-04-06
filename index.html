@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MindSync AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <h1>MindSync AI 🌿</h1>
+
+    <!-- Mood Screen -->
+    <div id="moodScreen" class="screen active">
+        <p>How are you feeling today?</p>
+
+        <div class="emoji-container">
+            <span onclick="selectMood('happy')">😊</span>
+            <span onclick="selectMood('sad')">😔</span>
+            <span onclick="selectMood('stress')">😣</span>
+            <span onclick="selectMood('angry')">😡</span>
+            <span onclick="selectMood('calm')">😌</span>
+        </div>
+    </div>
+
+    <!-- Chat Screen -->
+    <div id="chatScreen" class="screen">
+        <div id="chatBox" class="chat-box"></div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your thoughts..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
